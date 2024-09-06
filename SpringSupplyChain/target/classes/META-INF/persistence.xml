@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.hnc_SpringSupplyChain_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.hnc.pojo.ImportWh</class>
+    <class>com.hnc.pojo.Delivery</class>
+    <class>com.hnc.pojo.Comment</class>
+    <class>com.hnc.pojo.Product</class>
+    <class>com.hnc.pojo.ProdTag</class>
+    <class>com.hnc.pojo.SaleOrder</class>
+    <class>com.hnc.pojo.OrderDetail</class>
+    <class>com.hnc.pojo.OutWh</class>
+    <class>com.hnc.pojo.User</class>
+    <class>com.hnc.pojo.Tag</class>
+    <class>com.hnc.pojo.Category</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/saledb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="chuongne123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
